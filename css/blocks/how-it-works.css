@@ -11,7 +11,6 @@
   margin-right: 30px;
 }
 .how-it-works-title {
-  font-family: "Lato";
   font-weight: 600;
   font-size: 24px;
   line-height: 157%;
@@ -35,10 +34,19 @@
   color: #424242;
 }
 .how-it-works-steps {
+  display: flex;
+  column-gap: 95px;
 }
 
 .step {
   max-width: 390px;
+  margin-top: 52px;
+}
+.step:nth-child(2) {
+  margin-top: 287px;
+}
+.step:nth-child(3) {
+  margin-top: 54px;
 }
 .step-heading {
   position: relative;
@@ -72,6 +80,7 @@
   position: relative;
   background-color: aquamarine;
   padding-bottom: 126%;
+  border-radius: 8px;
 }
 .step-img {
   position: absolute;
@@ -80,4 +89,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }

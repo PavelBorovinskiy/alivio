@@ -1,0 +1,50 @@
+.story {
+  background-color: #245852;
+  padding-top: 229px;
+  padding-bottom: 176px;
+  color: #fff;
+}
+.story-row {
+  display: flex;
+  align-items: center;
+  column-gap: 31px;
+}
+.story-row-content {
+}
+.story-head {
+  max-width: 590px;
+}
+.story-head-heading {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+}
+.story-head-heading + * {
+  margin-top: 33px;
+}
+.story-head-text {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 157%;
+}
+.story-head-text + * {
+  margin-top: 52px;
+}
+.story-button {
+  padding: 20px 50px;
+}
+.story-row-video {
+  width: 895px;
+  position: relative;
+}
+.story-video-cover {
+  border-radius: 16px;
+}
+
+.story-icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
