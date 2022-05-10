@@ -6,6 +6,7 @@
   column-gap: 86px;
 }
 .product-img-wrapper {
+  position: relative;
     padding-left: 60px;
     padding-bottom: 74px;
 }
@@ -14,13 +15,14 @@
   border-radius: 18px;
 }
 .product-card {
-    
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .product-content {
   max-width: 584px;
 }
-.product-content-heading {
-}
+
 .heading-title {
   font-weight: 600;
   font-size: 25px;

@@ -1,17 +1,67 @@
-
 .card {
+  background-color: #ffffff;
+  width: 296px;
+  box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px 30px;
 }
 .card-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  color: #000000;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.card-title::after {
+  content: "";
+  position: absolute;
+  border: 0.745942px solid #000000;
+  left: -7px;
+  right: -7px;
+  bottom: 0;
 }
 .card-avatar {
+  margin-bottom: 25px;
 }
 .avatar {
+  text-align: center;
 }
 .avatar-img {
+  width: 57.44px;
+  height: 57.44px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 13px;
 }
 .avatar-name {
+  font-size: 12px;
+  line-height: 157%;
+  color: #000000;
 }
 .card-contents {
+  text-align: left;
+  padding-left: 6px;
 }
 .card-contents-title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 157%;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.card-list {
+  font-size: 10.6195px;
+  line-height: 157%;
+  color: #000000;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.card-item +* {
+  margin-top: 20px;
 }

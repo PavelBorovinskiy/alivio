@@ -1,0 +1,26 @@
+.footer {
+  background-color: #245852;
+  color: #fff;
+  padding: 104px 0 144px 0;
+}
+
+.footer-logo {
+  margin-bottom: 74px;
+  cursor: pointer;
+}
+.footer-nav {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+.footer-nav li + li {
+  margin-top: 60px;
+}
+
+.footer-nav a {
+  display: inline-flex;
+  transition: transform 500ms ease;
+}
+.footer-nav a:hover {
+  transform: scale(1.2);
+}

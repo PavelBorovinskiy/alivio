@@ -16,24 +16,26 @@
 	<link rel="stylesheet" href="./css/blocks/story.css">
 	<link rel="stylesheet" href="./css/blocks/product.css">
 	<link rel="stylesheet" href="./css/blocks/product-card.css">
+	<link rel="stylesheet" href="./css/blocks/footer.css">
 	<!-- Fonts -->
 	<link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
 	<link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
 	<title>Alivio</title>
+	
 </head>
 
 <body>
 
-	<header class="header">
+	<header  class="header">
 		<div class="container">
 			<div class="header-row">
-				<div class="header-logo"><a href="#"><img src="/img/logo.svg" alt="Alivio"></a></div>
-				<nav class="header-nav">
+				<div class="header-logo scrollto"><a href="#home"><img src="/img/logo.svg" alt="Alivio"></a></div>
+				<nav class="header-nav scrollto">
 					<ul>
-						<li><a href="#">Why Alivio</a></li>
-						<li><a href="#">Solutions</a></li>
-						<li><a href="#">Community</a></li>
-						<li><a href="#">Pricing</a></li>
+						<li><a href="#home">Why Alivio</a></li>
+						<li><a href="#solutions">Solutions</a></li>
+						<li><a href="#community">Community</a></li>
+						<li><a href="#pricing">Pricing</a></li>
 
 					</ul>
 				</nav>
@@ -45,7 +47,7 @@
 		</div>
 	</header>
 	<main>
-		<section class="home none">
+		<section id="home" class="home">
 			<div class="container">
 				<div class="home-content">
 					<h1 class="home-heading">Be aware, Manage well.</h1>
@@ -62,7 +64,7 @@
 				<img src="/img/bg-home/bg.png" alt="Background-cover">
 			</div>
 		</section>
-		<section class="how-it-works none">
+		<section id="solutions" class="how-it-works">
 			<div class="container">
 				<div class="how-it-works-header">
 					<div class="how-it-works-header-head">
@@ -113,7 +115,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="story none">
+		<section id="community" class="story">
 			<div class="container-wide container">
 				<div class="story-row">
 					<div class="story-row-content">
@@ -134,7 +136,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="product">
+		<section id="pricing" class="product">
 			<div class="container">
 				<div class="product-row">
 						<div class="product-img-wrapper">
@@ -150,9 +152,9 @@
 									</div>
 									<div class="card-contents">
 										<h3 class="card-contents-title">Your custom contents</h3>
-										<ul>
-											<li>Understand Your Stress</li>
-											<li>Anger Management</li>
+										<ul class="card-list">
+											<li class="card-item">Understand Your Stress</li>
+											<li class="card-item">Anger Management</li>
 										</ul>
 									</div>
 								</div>
@@ -177,9 +179,23 @@
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer class="footer">
+		<div class="container scrollto">
+			 <a href="#home"><img class="footer-logo" src="./img/logo-footer.svg" alt="Logo footer"></a>
+			<nav class="footer-nav scrollto">
+				<ul>
+					<li><a href="#home">Why Alivio</a></li>
+					<li><a href="#solutions">Solutions</a></li>
+					<li><a href="#community">Community</a></li>
+					<li><a href="#community">Pricing</a></li>
 
+				</ul>
+
+			</nav>
+		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
