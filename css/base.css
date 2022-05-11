@@ -30,9 +30,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .container-wide {
   max-width: 1536px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
+@media (max-width: 1399.68px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1535.68px) {
+  .container-wide {
+    width: 100%;
+  }
+}

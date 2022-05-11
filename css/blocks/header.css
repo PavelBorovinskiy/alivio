@@ -52,11 +52,17 @@
 }
 
 @media (max-width: 1199.69px) {
+  .header-row {
+    justify-content: space-between;
+  }
   .header-nav {
-    margin-left: 80px;
+    margin-left: 50px;
   }
   .header-nav ul li:not(:last-child) {
     margin-right: 30px;
+  }
+  .header-login {
+    margin-left: 30px;
   }
 }
 
