@@ -5,18 +5,16 @@
   position: fixed;
   width: 100%;
   z-index: 100;
-  background:#fff;
+  background: #fff;
 }
 
 .header-row {
   display: flex;
   align-items: center;
-  
 }
 
-
 .header-nav {
-	margin-left: 172px;
+  margin-left: 172px;
   font-weight: 500;
   color: #292929;
 }
@@ -48,9 +46,23 @@
 .header-login a:hover {
   color: #01996d;
 }
-.header-login .nav-button  {
+.header-login .nav-button {
   color: #fff;
   padding: 13px 50px;
 }
 
+@media (max-width: 1199.69px) {
+  .header-nav {
+    margin-left: 80px;
+  }
+  .header-nav ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
+@media (max-width: 991.69px) {
+  .header-nav,
+  .header-login {
+    display: none;
+  }
+}
