@@ -8,6 +8,19 @@
   align-items: center;
   padding: 20px 30px 30px;
 }
+
+@media (max-width: 1299.68px) {
+  
+  .card {
+
+    padding: 15px 30px ;
+  }
+
+}
+
+@media ( min-width:767.68px) and (max-width: 991.68px) {
+
+}
 .card-title {
   position: relative;
   font-weight: 600;
