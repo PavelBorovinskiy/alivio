@@ -35,6 +35,10 @@ body {
   max-width: 1536px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 1399.68px) {
   .container {
     width: 100%;

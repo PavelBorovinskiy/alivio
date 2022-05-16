@@ -1,0 +1,70 @@
+.mobile-nav-button {
+  /* Reset for button */
+
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  /* New icon styles */
+  position: relative;
+  z-index: 99;
+  width: 40px;
+  height: 30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav-button__icon {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+}
+
+.mobile-nav-button__icon::before,
+.mobile-nav-button__icon::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+
+.mobile-nav-button__icon::before {
+    left: 0;
+    top: 10px;
+}
+
+.mobile-nav-button__icon::after {
+    left: 0;
+    top:-10px;
+}
+
+
+.mobile-nav-button__icon.active {
+    background-color: transparent;
+}
+
+.mobile-nav-button__icon.active::before{
+    content: '';
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+.mobile-nav-button__icon.active:after {
+    content: '';
+    top: 0;
+    transform: rotate(-45deg);
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+@media (max-width: 991.69px) {
+
+    .mobile-nav-button {
+        display: flex;
+    }
+}

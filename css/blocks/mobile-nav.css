@@ -1,0 +1,32 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 90vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 100%, 0.99);
+  z-index: 5;
+  /* display: none; */
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px;
+  justify-content: space-evenly;
+  transition: right .3s ease;
+}
+.mobile-nav.active {
+  display: flex;
+  right: 0;
+}
+
+.mobile-nav-list li + li {
+  margin-top: 20px;
+  text-align: center;
+}
+.mobile-login {
+  display: flex;
+  align-items: center;
+}
+.nav-button {
+  padding: 20px 30px;
+  margin-left: 20px;
+}
